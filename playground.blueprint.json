@@ -1,0 +1,28 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "login": true,
+  "siteOptions": {
+    "blogname": "Luma Atelier",
+    "blogdescription": "Thời trang nữ tinh giản, dễ mặc mỗi ngày"
+  },
+  "steps": [
+    {
+      "step": "activateTheme",
+      "themeFolderName": "luma-atelier"
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      },
+      "options": {
+        "activate": true
+      }
+    }
+  ]
+}

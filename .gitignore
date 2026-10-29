@@ -1,0 +1,19 @@
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+wp-config.php
+
+# WordPress runtime and generated files
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*
+*.log
+
+# Node and editor files
+node_modules/
+.npm/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
